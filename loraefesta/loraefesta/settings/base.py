@@ -45,12 +45,12 @@ MANAGERS = ADMINS
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'loraefesta',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 ########## END DATABASE CONFIGURATION
@@ -161,13 +161,11 @@ TEMPLATE_LOADERS = (
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
 TEMPLATE_DIRS = (
     normpath(join(SITE_ROOT, 'templates')),
+    'loraweb/templates',
 )
 
 CMS_TEMPLATES = (
-    ('base.html', gettext('default')),
-    ('2col.html', gettext('2 Column')),
-    ('3col.html', gettext('3 Column')),
-    ('extra.html', gettext('Some extra fancy template')),
+    ('cms/example.html', gettext('example')),
 )
 
 ########## END TEMPLATE CONFIGURATION
