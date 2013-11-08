@@ -1,0 +1,337 @@
+/*
+Theme Name: lora&festa 2014
+Author: icardi simone
+*/
+/* Reset
+-------------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+}
+del {
+  color: #333;
+}
+ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 24px;
+  margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+small {
+  font-size: smaller;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+/* Clearing floats */
+.clear:after,
+.wrapper:after,
+.format-status .entry-header:after {
+  clear: both;
+}
+.clear:before,
+.clear:after,
+.wrapper:before,
+.wrapper:after,
+.format-status .entry-header:before,
+.format-status .entry-header:after {
+  display: table;
+  content: "";
+}
+/*general*/
+#quattro1004 {
+  margin: 100px 15%;
+  text-align: center;
+  line-height: 200%;
+  font-size: 16px;
+}
+/*MINSTYLE*/
+html {
+  width: 100%;
+  height: 100%;
+}
+*:focus {
+  outline: none;
+}
+.nospace {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.dispnone {
+  display: none!important;
+}
+.hidden {
+  visibility: hidden!important;
+}
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  color: #000;
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+}
+body td {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 10px;
+  color: #000;
+}
+body a,
+body a:link {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+}
+body a:hover,
+body a:active {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+}
+body a img,
+body a:link img,
+body a:hover img,
+body a:active img {
+  border: 0;
+  text-decoration: none;
+  outline: none;
+}
+body object,
+body embed {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body .txt img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  /*border:solid 1px #4E4F4E; padding:1px; */
+
+  /*WP*/
+
+  /* Images */
+
+}
+body .txt img.alignleft {
+  float: left;
+  margin: 3px 8px 3px 0;
+}
+body .txt img.alignright {
+  float: right;
+  margin: 3px 0 3px 8px;
+}
+body .txt img.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =Media queries
+-------------------------------------------------------------- */
+/* Minimum width of 960 pixels min 601. */
+@media screen and (max-width: 960px) {
+  body #page {
+    overflow-x: hidden;
+  }
+}
+/* =Media queries
+-------------------------------------------------------------- */
+/* Max width of 600 pixels. */
+@media screen and (max-width: 600px) {
+  body #page {
+    overflow-x: hidden;
+  }
+}
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+  width: auto;
+  /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
+
+}
