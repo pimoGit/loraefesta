@@ -182,13 +182,13 @@ object, embed { .nospace;}
  }
 
 
-	#page{
+	#page{ .nospace; width:960px; background:#FF0; margin-left:-480px; left:50%; position:relative;
 		
 	}
 	
 	
 	
-
+	&.interna1 {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;}
 }
 
 
@@ -201,8 +201,8 @@ object, embed { .nospace;}
 /* Minimum width of 960 pixels min 601. */
 @media screen and (max-width: 960px) {
 	
-	body { 
-		#page{ overflow-x:hidden;
+	body { background-image:none;
+		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		}
 		
 		
@@ -223,8 +223,8 @@ object, embed { .nospace;}
 /* Max width of 600 pixels. */
 @media screen and (max-width: 600px) {
 	
-	body { 
-		#page{ overflow-x:hidden;
+	body { background-image:none;
+		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		}
 	
 
