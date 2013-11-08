@@ -208,8 +208,13 @@ object, embed { .nospace;}
 			#wrapper{padding:0;
 				.video {.nospace; height:555px; background:#999;}
 				.menu_cont {.nospace; height:930px; width:960px; display:inline-block;
-					.sezione {.nospace; width:50%; height:50%; display:inline-block; float:left;
+					.sezione {.nospace; width:50%; height:50%; display:inline-block; float:left; position:relative;
 						.bg {.nospace; width:100%; height:100%;}
+						.menu {.nospace; width:100%; height:100%; font-size:25px; display:inline-table; line-height:150%; padding:20% 0;
+							ul {.nospace; list-style-type:none; margin:auto; display:table;
+								li { .nospace;list-style-image:none;}
+							}
+						}
 					}
 				}
 			}
@@ -245,6 +250,8 @@ object, embed { .nospace;}
 				.menu_cont { height:auto; width:100%; 
 					.sezione { height:auto; 
 						.bg { margin-bottom:-1px;}
+						.menu { font-size:20px;  line-height:120%; padding:20% 0;
+						}
 					}
 				}
 			}
@@ -272,7 +279,20 @@ object, embed { .nospace;}
 	body { background-image:none;
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		}
-	
+		
+	&.home {
+		#page {
+		
+			#wrapper{
+				.menu_cont { 
+					.sezione { 
+						.menu { font-size:15px; 
+						}
+					}
+				}
+			}
+		}
+	}
 
 }
 	
