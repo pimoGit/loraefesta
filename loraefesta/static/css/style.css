@@ -313,14 +313,85 @@ body #page {
   padding: 0;
   border: 0;
   width: 960px;
-  background: #FF0;
+  background: #FFF;
   margin-left: -480px;
   left: 50%;
   position: relative;
 }
+body #page #head {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 10px 20px;
+  background: #000;
+}
+body #page #head #logo {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  width: 324px;
+  height: 62px;
+  background: url(../img/logo.gif) center no-repeat;
+}
+body #page #wrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 10px;
+}
+body #page #foot {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin: 0 10px;
+  padding: 20px 100px;
+  border-top: solid 1px #939598;
+}
 body.interna1 {
   background-image: url(../img/T-bg1.jpg);
   background-repeat: repeat;
+}
+body.home #page #head {
+  background: #FFF;
+}
+body.home #page #wrapper {
+  padding: 0;
+}
+body.home #page #wrapper .video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 555px;
+  background: #999;
+}
+body.home #page #wrapper .menu_cont {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 930px;
+  width: 960px;
+  display: inline-block;
+}
+body.home #page #wrapper .menu_cont .sezione {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  float: left;
+}
+body.home #page #wrapper .menu_cont .sezione .bg {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+body.home #page #foot {
+  border-top: none;
 }
 /* =Media queries
 -------------------------------------------------------------- */
@@ -335,6 +406,19 @@ body.interna1 {
     margin-left: 0;
     left: 0;
     overflow-x: hidden;
+  }
+  body.home #page #wrapper .video {
+    height: auto;
+  }
+  body.home #page #wrapper .menu_cont {
+    height: auto;
+    width: 100%;
+  }
+  body.home #page #wrapper .menu_cont .sezione {
+    height: auto;
+  }
+  body.home #page #wrapper .menu_cont .sezione .bg {
+    margin-bottom: -1px;
   }
 }
 /* =Media queries
@@ -352,14 +436,7 @@ body.interna1 {
     overflow-x: hidden;
   }
 }
-img.size-full,
-img.size-large,
-img.header-image,
-img.wp-post-image,
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"] {
+img {
   width: auto;
   /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
-
 }
