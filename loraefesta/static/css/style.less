@@ -165,7 +165,7 @@ a img, a:link img, a:hover img, a:active img { border:0; text-decoration:none; o
 object, embed { .nospace;}
 
 
-.txt img { .nospace; max-width: 100%; height:auto; /*border:solid 1px #4E4F4E; padding:1px; */
+.page_content img { .nospace; max-width: 100%; height:auto; /*border:solid 1px #4E4F4E; padding:1px; */
 /*WP*/
 /* Images */
 &.alignleft {
@@ -188,7 +188,19 @@ object, embed { .nospace;}
 			#logo { .nospace; display:inline-block; position:relative; width:324px; height:62px; background:url(../img/logo.gif) center no-repeat; }
 		}
 		
-		#wrapper{.nospace; padding:10px;}
+		#wrapper{.nospace; padding:10px; display:inline-block;
+		
+			.menu-tot {.nospace; width:230px; padding-right:20px; font-size:15px; display:inline-block; float:left;
+				ul {.nospace; list-style-type:none; margin-bottom:10px;
+					li { .nospace;list-style-image:none; 
+						&.macro { font-weight:bold; margin-bottom:5px;}
+					}
+				}
+			}
+			
+			.page_content {.nospace; display:inline-block; width:440px; float:left; margin-right:250px; line-height:150%; font-size:12px; }
+		
+		}
 
 	
 		#foot { .nospace;  margin:0 10px; padding:20px 100px; border-top:solid 1px #939598;}
@@ -239,6 +251,18 @@ object, embed { .nospace;}
 	
 	body { background-image:none;
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
+		
+		
+		#wrapper{
+		
+			.menu-tot {width:15%; padding-right:10%; font-size:13px; }
+			
+			.page_content { width:60%;  margin-right:15%; }
+		
+		}
+		
+		
+			#foot { padding:20px 5%;}
 		}
 		
 		
@@ -256,7 +280,7 @@ object, embed { .nospace;}
 				}
 			}
 			
-		
+			#foot { padding:20px 5%;}
 		}
 	
 	}
@@ -278,6 +302,16 @@ object, embed { .nospace;}
 	
 	body { background-image:none;
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
+		
+		#wrapper{
+		
+			.menu-tot {width:25%; padding-right:10%; font-size:11px; }
+			
+			.page_content { width:60%;  margin-right:5%; font-size:11px; }
+		
+		}
+		
+		
 		}
 		
 	&.home {

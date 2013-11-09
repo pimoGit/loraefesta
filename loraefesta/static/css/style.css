@@ -283,7 +283,7 @@ body embed {
   padding: 0;
   border: 0;
 }
-body .txt img {
+body .page_content img {
   margin: 0;
   padding: 0;
   border: 0;
@@ -296,15 +296,15 @@ body .txt img {
   /* Images */
 
 }
-body .txt img.alignleft {
+body .page_content img.alignleft {
   float: left;
   margin: 3px 8px 3px 0;
 }
-body .txt img.alignright {
+body .page_content img.alignright {
   float: right;
   margin: 3px 0 3px 8px;
 }
-body .txt img.aligncenter {
+body .page_content img.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
@@ -340,6 +340,45 @@ body #page #wrapper {
   padding: 0;
   border: 0;
   padding: 10px;
+  display: inline-block;
+}
+body #page #wrapper .menu-tot {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 230px;
+  padding-right: 20px;
+  font-size: 15px;
+  display: inline-block;
+  float: left;
+}
+body #page #wrapper .menu-tot ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+body #page #wrapper .menu-tot ul li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style-image: none;
+}
+body #page #wrapper .menu-tot ul li.macro {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+body #page #wrapper .page_content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  width: 440px;
+  float: left;
+  margin-right: 250px;
+  line-height: 150%;
+  font-size: 12px;
 }
 body #page #foot {
   margin: 0;
@@ -433,6 +472,18 @@ body.home #page #foot {
     left: 0;
     overflow-x: hidden;
   }
+  body #page #wrapper .menu-tot {
+    width: 15%;
+    padding-right: 10%;
+    font-size: 13px;
+  }
+  body #page #wrapper .page_content {
+    width: 60%;
+    margin-right: 15%;
+  }
+  body #page #foot {
+    padding: 20px 5%;
+  }
   body.home #page #wrapper .video {
     height: auto;
   }
@@ -451,6 +502,9 @@ body.home #page #foot {
     line-height: 120%;
     padding: 20% 0;
   }
+  body.home #page #foot {
+    padding: 20px 5%;
+  }
 }
 /* =Media queries
 -------------------------------------------------------------- */
@@ -465,6 +519,16 @@ body.home #page #foot {
     margin-left: 0;
     left: 0;
     overflow-x: hidden;
+  }
+  body #page #wrapper .menu-tot {
+    width: 25%;
+    padding-right: 10%;
+    font-size: 11px;
+  }
+  body #page #wrapper .page_content {
+    width: 60%;
+    margin-right: 5%;
+    font-size: 11px;
   }
   body.home #page #wrapper .menu_cont .sezione .menu {
     font-size: 15px;
