@@ -504,6 +504,9 @@ body.home #page #foot {
   body {
     background-image: none;
   }
+  body.interna1 {
+    background-image: none;
+  }
   body #page {
     width: 100%;
     min-width: 320px;
