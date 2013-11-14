@@ -228,14 +228,17 @@ object, embed { .nospace;}
 			
 			#wrapper{padding:0;
 				.video {.nospace; height:555px; background:#999;}
-				.menu_cont {.nospace; height:930px; width:960px; display:inline-block;
-					.sezione {.nospace; width:50%; height:50%; display:inline-block; float:left; position:relative;
-						.bg {.nospace; width:100%; height:100%;}
+				.menu_cont {.nospace; height:930px; width:960px; display:table; content:""; clear:both;
+					.sezione {.nospace; width:50%; height:50%; display:block; float:left; position:relative; 
+						.bg {.nospace; width:100%; height:100%; display:block; /*transition-duration:0.2s; -webkit-transition-duration:0.2s;*/  }
 						.menu {.nospace; width:100%; height:80%; font-size:25px; line-height:150%; position:absolute; padding-top:20%; top:0; left:0;
 							ul {.nospace; list-style-type:none; margin:auto; display:table;
 								li { .nospace;list-style-image:none;}
 							}
 						}
+						/*&:hover {
+							.bg { transform:scale(1.1);}
+						 }*/
 					}
 				}
 			}

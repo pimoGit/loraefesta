@@ -448,7 +448,9 @@ body.home #page #wrapper .menu_cont {
   border: 0;
   height: 930px;
   width: 960px;
-  display: inline-block;
+  display: table;
+  content: "";
+  clear: both;
 }
 body.home #page #wrapper .menu_cont .sezione {
   margin: 0;
@@ -456,9 +458,13 @@ body.home #page #wrapper .menu_cont .sezione {
   border: 0;
   width: 50%;
   height: 50%;
-  display: inline-block;
+  display: block;
   float: left;
   position: relative;
+  /*&:hover {
+							.bg { transform:scale(1.1);}
+						 }*/
+
 }
 body.home #page #wrapper .menu_cont .sezione .bg {
   margin: 0;
@@ -466,6 +472,8 @@ body.home #page #wrapper .menu_cont .sezione .bg {
   border: 0;
   width: 100%;
   height: 100%;
+  display: block;
+  /*transition-duration:0.2s; -webkit-transition-duration:0.2s;*/
 }
 body.home #page #wrapper .menu_cont .sezione .menu {
   margin: 0;
