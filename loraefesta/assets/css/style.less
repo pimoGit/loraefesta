@@ -1,0 +1,364 @@
+/*
+Theme Name: lora&festa 2014
+Author: icardi simone
+*/
+
+
+/* Reset
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+html {
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a:focus {
+	outline: thin dotted;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block; margin:0; padding:0; border:0;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+/* Clearing floats */
+.clear:after,
+.wrapper:after,
+.format-status .entry-header:after {
+	clear: both;
+}
+.clear:before,
+.clear:after,
+.wrapper:before,
+.wrapper:after,
+.format-status .entry-header:before,
+.format-status .entry-header:after {
+	display: table;
+	content: "";
+}
+
+/*general*/
+#quattro1004 { margin:100px 15%; text-align:center; line-height:200%; font-size:16px;}
+/*MINSTYLE*/
+html { width:100%; height:100%;}
+*:focus { outline:none;}
+
+.rounded_corners (@radius: 3px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+  border:solid 1px #FFF;
+}
+.nospace {margin:0; padding:0; border:0;}
+.rotate (@deg, @dott) {
+	transform: rotate(@deg);
+	-ms-transform: rotate(@deg); /* IE 9 */
+	-webkit-transform: rotate(@deg); /* Safari and Chrome */
+	-o-transform: rotate(@deg); /* Opera */
+	-moz-transform: rotate(@deg); /* Firefox */
+	 /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=@dott); IE8 lt*/
+	}
+
+.dispnone{ display:none!important;}
+.hidden{ visibility:hidden!important;}
+
+
+form { .nospace; }
+body { .nospace; font-family:Verdana, Geneva, sans-serif;  font-size:10px; color:#000; background:#FFF; width:100%; height: 100%;
+td {  font-family:Verdana, Geneva, sans-serif; font-size:10px; color:#000; }
+a, a:link {  text-decoration:none; cursor:pointer; outline:none; color:#000; }
+a:hover, a:active { text-decoration:none; cursor:pointer; outline:none; color:#333;}
+
+a img, a:link img, a:hover img, a:active img { border:0; text-decoration:none; outline:none;}
+object, embed { .nospace;}
+
+
+.page_content img { .nospace; max-width: 100%; height:auto; /*border:solid 1px #4E4F4E; padding:1px; */
+/*WP*/
+/* Images */
+&.alignleft {
+	float: left; margin:3px 8px 3px 0;
+}
+&.alignright {
+	float: right;margin:3px 0 3px 8px;
+}
+&.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ }
+
+
+	#page{ .nospace; width:960px; background:#FFF; margin-left:-480px; left:50%; position:relative;
+	
+		#head {.nospace; padding:10px 20px; background:#000;
+			#logo { .nospace; display:inline-block; position:relative; width:324px; height:62px; background:url(../img/logo.gif) center no-repeat; }
+		}
+		
+		#breadcrums {.nospace; padding:0 10px;
+			.path{.nospace; display:inline-block; width:440px; float:left; margin:15px 250px 0 250px; line-height:150%; font-size:12px; }
+			 }
+		
+		#wrapper{.nospace; padding:10px; display:inline-block;
+		
+			h1 {.nospace; margin-bottom:10px; font-size:36px; color:#000; font-weight:bold; width:440px; float:left; margin-right:250px; line-height:150%; margin-left:250px;}
+		
+			.menu-tot {.nospace; width:230px; padding-right:20px; font-size:15px; display:inline-block; float:left;
+				ul {.nospace; list-style-type:none; margin-bottom:10px;
+					li { .nospace;list-style-image:none; 
+						&.macro { font-weight:bold; margin-bottom:5px;}
+					}
+				}
+			}
+			
+			
+			.page_content {.nospace; display:inline-block; width:440px; float:left; margin-right:250px; line-height:150%; font-size:12px; 
+				article {.nospace; margin-top:-4px;}
+			}
+		
+		}
+
+	
+		#foot { .nospace;  margin:0 10px; padding:20px 100px; border-top:solid 1px #939598;}
+		
+	}
+	
+	
+	
+	&.interna1 {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;}
+	
+	&.home {
+		#page {
+			#head { background:#FFF;
+				#logo {}
+			}
+			
+			#wrapper{padding:0;
+				.video {.nospace; height:555px; background:#999;}
+				.menu_cont {.nospace; height:930px; width:960px; display:table; content:""; clear:both;
+					.sezione {.nospace; width:50%; height:50%; display:block; float:left; position:relative; 
+						.bg {.nospace; width:100%; height:100%; display:block; /*transition-duration:0.2s; -webkit-transition-duration:0.2s;*/  }
+						.menu {.nospace; width:100%; height:80%; font-size:25px; line-height:150%; position:absolute; padding-top:20%; top:0; left:0;
+							ul {.nospace; list-style-type:none; margin:auto; display:table;
+								li { .nospace;list-style-image:none;}
+							}
+						}
+						/*&:hover {
+							.bg { transform:scale(1.1);}
+						 }*/
+					}
+				}
+			}
+			
+			#foot { border-top:none;}
+		
+		}
+	
+	}
+	
+}
+
+
+
+
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Minimum width of 960 pixels min 601. */
+@media screen and (max-width: 960px) {
+	
+	body { background-image:none;
+	&.interna1 { background-image:none;}
+		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
+		
+		#breadcrums { 
+			.path{width:60%;  margin-right:15%; font-size:11px; margin-left:25%;}
+			 }
+		
+		#wrapper{
+			
+			h1 {width:60%;  margin-right:15%; font-size:24px; margin-left:25%;}
+		
+			.menu-tot {width:15%; padding-right:10%; font-size:13px;  }
+			
+			
+			.page_content { width:60%;  margin-right:15%; }
+		
+		}
+		
+		
+			#foot { padding:20px 5%;}
+		}
+		
+		
+	&.home {
+		#page {
+			
+			#wrapper{
+				.video { height:auto;}
+				.menu_cont { height:auto; width:100%; 
+					.sezione { height:auto; 
+						.bg { margin-bottom:-1px;}
+						.menu { font-size:20px;  line-height:120%; height:65%; padding-top:35%;
+						}
+					}
+				}
+			}
+			
+			#foot { padding:20px 5%;}
+		}
+	
+	}
+	
+	
+
+}
+	
+
+}
+
+
+
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Max width of 600 pixels. */
+@media screen and (max-width: 600px) {
+	
+	body { background-image:none;
+		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
+		
+		#breadcrums { 
+			.path{ width:60%; margin-right:5%; font-size:11px; margin-left:35%;}
+			 }
+		
+		#wrapper{
+			
+			h1 {width:60%;  margin-right:5%; font-size:18px; margin-left:35%;}
+		
+			.menu-tot {width:25%; padding-right:10%; font-size:11px; }
+			
+			
+			.page_content { width:60%;  margin-right:5%; font-size:11px; }
+		
+		}
+		
+		
+		}
+		
+	&.home {
+		#page {
+		
+			#wrapper{
+				.menu_cont { 
+					.sezione { 
+						.menu { font-size:15px; 
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+	
+
+}
+
+
+
+img{width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */}
