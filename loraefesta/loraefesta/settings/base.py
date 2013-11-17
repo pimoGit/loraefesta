@@ -165,7 +165,9 @@ TEMPLATE_DIRS = (
 )
 
 CMS_TEMPLATES = (
-    ('cms/example.html', gettext('example')),
+    ('modelli/base.html', gettext('base')),
+    ('modelli/home.html', gettext('home')),
+    ('modelli/interna.html', gettext('interna')),
 )
 
 ########## END TEMPLATE CONFIGURATION
