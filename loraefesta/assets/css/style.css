@@ -243,7 +243,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 10px;
   color: #000;
   background: #FFF;
@@ -251,7 +251,7 @@ body {
   height: 100%;
 }
 body td {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 10px;
   color: #000;
 }
