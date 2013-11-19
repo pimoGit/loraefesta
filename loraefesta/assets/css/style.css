@@ -283,31 +283,6 @@ body embed {
   padding: 0;
   border: 0;
 }
-body .page_content img {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  max-width: 100%;
-  height: auto;
-  /*border:solid 1px #4E4F4E; padding:1px; */
-
-  /*WP*/
-
-  /* Images */
-
-}
-body .page_content img.alignleft {
-  float: left;
-  margin: 3px 8px 3px 0;
-}
-body .page_content img.alignright {
-  float: right;
-  margin: 3px 0 3px 8px;
-}
-body .page_content img.aligncenter {
-  margin-left: auto;
-  margin-right: auto;
-}
 body #page {
   margin: 0;
   padding: 0;
@@ -405,9 +380,8 @@ body #page #wrapper .page_content {
   padding: 0;
   border: 0;
   display: inline-block;
-  width: 440px;
+  width: 690px;
   float: left;
-  margin-right: 250px;
   line-height: 150%;
   font-size: 12px;
 }
@@ -416,6 +390,36 @@ body #page #wrapper .page_content article {
   padding: 0;
   border: 0;
   margin-top: -4px;
+}
+body #page #wrapper .page_content article .tex {
+  width: 440px;
+  margin-right: 250px;
+}
+body #page #wrapper .page_content img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /*border:solid 1px #4E4F4E; padding:1px; */
+
+  /*WP*/
+
+  /* Images */
+
+}
+body #page #wrapper .page_content img.alignleft {
+  float: left;
+  margin: 3px 8px 3px 0;
+}
+body #page #wrapper .page_content img.alignright {
+  float: right;
+  margin: 3px 0 3px 8px;
+}
+body #page #wrapper .page_content img.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
 }
 body #page #foot {
   margin: 0;
@@ -523,14 +527,14 @@ body.home #page #foot {
     overflow-x: hidden;
   }
   body #page #breadcrums .path {
-    width: 60%;
-    margin-right: 15%;
+    width: 75%;
+    margin-right: 0;
     font-size: 11px;
     margin-left: 25%;
   }
   body #page #wrapper h1 {
-    width: 60%;
-    margin-right: 15%;
+    width: 75%;
+    margin-right: 0;
     font-size: 24px;
     margin-left: 25%;
   }
@@ -540,7 +544,11 @@ body.home #page #foot {
     font-size: 13px;
   }
   body #page #wrapper .page_content {
-    width: 60%;
+    width: 75%;
+    margin-right: 0;
+  }
+  body #page #wrapper .page_content article .tex {
+    width: 85%;
     margin-right: 15%;
   }
   body #page #foot {
@@ -584,26 +592,30 @@ body.home #page #foot {
     overflow-x: hidden;
   }
   body #page #breadcrums .path {
-    width: 60%;
-    margin-right: 5%;
+    width: 100%;
+    margin-right: 0;
     font-size: 11px;
-    margin-left: 35%;
+    margin-left: 0;
   }
   body #page #wrapper h1 {
-    width: 60%;
-    margin-right: 5%;
+    width: 70%;
+    margin-right: 0;
     font-size: 18px;
-    margin-left: 35%;
+    margin-left: 30%;
   }
   body #page #wrapper .menu-tot {
-    width: 25%;
+    width: 20%;
     padding-right: 10%;
     font-size: 11px;
   }
   body #page #wrapper .page_content {
-    width: 60%;
-    margin-right: 5%;
+    width: 70%;
+    margin-right: 0;
     font-size: 11px;
+  }
+  body #page #wrapper .page_content article .tex {
+    width: 100%;
+    margin-right: 0;
   }
   body.home #page #wrapper .menu_cont .sezione .menu {
     font-size: 15px;

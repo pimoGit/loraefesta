@@ -165,23 +165,6 @@ a img, a:link img, a:hover img, a:active img { border:0; text-decoration:none; o
 object, embed { .nospace;}
 
 
-.page_content img { .nospace; max-width: 100%; height:auto; /*border:solid 1px #4E4F4E; padding:1px; */
-/*WP*/
-/* Images */
-&.alignleft {
-	float: left; margin:3px 8px 3px 0;
-}
-&.alignright {
-	float: right;margin:3px 0 3px 8px;
-}
-&.aligncenter {
-	margin-left: auto;
-	margin-right: auto;
-}
-
- }
-
-
 	#page{ .nospace; width:960px; background:#FFF; margin-left:-480px; left:50%; position:relative;
 	
 		#head {.nospace; padding:10px 20px; background:#000;
@@ -205,8 +188,25 @@ object, embed { .nospace;}
 			}
 			
 			
-			.page_content {.nospace; display:inline-block; width:440px; float:left; margin-right:250px; line-height:150%; font-size:12px; 
-				article {.nospace; margin-top:-4px;}
+			.page_content {.nospace; display:inline-block; width:690px; float:left;  line-height:150%; font-size:12px; 
+				article {.nospace; margin-top:-4px;
+					.tex { width:440px; margin-right:250px;}
+				}
+				img { .nospace; width:100%; max-width: 100%; height:auto; /*border:solid 1px #4E4F4E; padding:1px; */
+				/*WP*/
+				/* Images */
+				&.alignleft {
+					float: left; margin:3px 8px 3px 0;
+				}
+				&.alignright {
+					float: right;margin:3px 0 3px 8px;
+				}
+				&.aligncenter {
+					margin-left: auto;
+					margin-right: auto;
+				}
+				
+				 }
 			}
 		
 		}
@@ -266,17 +266,21 @@ object, embed { .nospace;}
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		
 		#breadcrums { 
-			.path{width:60%;  margin-right:15%; font-size:11px; margin-left:25%;}
+			.path{width:75%;  margin-right:0; font-size:11px; margin-left:25%;}
 			 }
 		
 		#wrapper{
 			
-			h1 {width:60%;  margin-right:15%; font-size:24px; margin-left:25%;}
+			h1 {width:75%;  margin-right:0; font-size:24px; margin-left:25%;}
 		
 			.menu-tot {width:15%; padding-right:10%; font-size:13px;  }
 			
 			
-			.page_content { width:60%;  margin-right:15%; }
+			.page_content { width:75%;  margin-right:0;
+				article {
+					.tex { width:85%; margin-right:15%;}
+				}
+			}
 		
 		}
 		
@@ -323,17 +327,21 @@ object, embed { .nospace;}
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		
 		#breadcrums { 
-			.path{ width:60%; margin-right:5%; font-size:11px; margin-left:35%;}
+			.path{ width:100%; margin-right:0; font-size:11px; margin-left:0;}
 			 }
 		
 		#wrapper{
 			
-			h1 {width:60%;  margin-right:5%; font-size:18px; margin-left:35%;}
+			h1 {width:70%;  margin-right:0; font-size:18px; margin-left:30%;}
 		
 			.menu-tot {width:20%; padding-right:10%; font-size:11px; }
 			
 			
-			.page_content { width:65%;  margin-right:5%; font-size:11px; }
+			.page_content { width:70%;  margin-right:0; font-size:11px; 
+				article {
+					.tex { width:100%; margin-right:0;}
+				}
+			}
 		
 		}
 		
