@@ -182,8 +182,17 @@ object, embed { .nospace;}
 
 	#page{ .nospace; width:960px; background:#FFF; margin-left:-480px; left:50%; position:relative;
 	
-		#head {.nospace; padding:10px 20px; background:#000;
-			#logo { .nospace; display:inline-block; position:relative; width:324px; height:62px; background:url(../img/logo.gif) center no-repeat; }
+		#head {.nospace; padding:0; background:#000; position:relative; height:90px;
+			#logo { .nospace; display:inline-block; position:absolute; top:15px; left:32px; width:320px; height:60px; background:url(../img/logo_int.gif) center no-repeat; }
+			#pay {.nospace; position:absolute; top:20px; left:370px; width:154px; height:43px; background: url(../img/pay_int.gif) no-repeat;}
+			#lang {.nospace; position:absolute; top:45px; right:10px;
+				a {.nospace; display:inline-block; padding:6px; color:#FFF; font-size:12px;
+					&:hover { text-decoration:overline;}
+					&.selct { padding:5px; border:solid 1px #FFF;
+						&:hover { text-decoration:none; cursor:default;}
+					}
+				}
+			}
 		}
 		
 		#breadcrums {.nospace; padding:0 10px;
@@ -227,7 +236,11 @@ object, embed { .nospace;}
 		}
 
 	
-		#foot { .nospace;  margin:0 10px; padding:20px 100px; border-top:solid 1px #939598;}
+		#foot { .nospace;  margin:30px 0 0 0; padding:5px 10px; border-top:solid 1px #231F20; font-size:13px; color:#949494; display:inline-block; width:940px; font-weight:500; line-height:130%;
+			.foot-bloc { .nospace; margin-right:30px; margin-bottom:10px; display:inline-block; float:left; width:220px;
+				.princ { font-family:"Bodoni MT", 'EB Garamond', "Times New Roman", serif; color:#000; font-size:15px; font-weight:bold;}
+			}
+		}
 		
 	}
 	
@@ -238,7 +251,13 @@ object, embed { .nospace;}
 	&.home {
 		#page {
 			#head { background:#FFF;
-				#logo {}
+				#logo { background:url(../img/logo_home.gif) center no-repeat;}
+				#pay { background: url(../img/pay_home.gif) no-repeat;}
+				#lang {
+					a { color:#000; 
+						&.selct { border:solid 1px #000;}
+					}
+				}
 			}
 			
 			#wrapper{padding:0;
@@ -258,7 +277,7 @@ object, embed { .nospace;}
 				}
 			}
 			
-			#foot { border-top:none;}
+			/*#foot { border-top:none;}*/
 		
 		}
 	
@@ -280,6 +299,8 @@ object, embed { .nospace;}
 	&.interna1 { background-image:none;}
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		
+		
+		
 		#breadcrums { 
 			.path{width:75%;  margin-right:0; font-size:11px; margin-left:25%;}
 			 }
@@ -300,7 +321,7 @@ object, embed { .nospace;}
 		}
 		
 		
-			#foot { padding:20px 5%;}
+			#foot { width:100%;}
 		}
 		
 		
@@ -318,7 +339,7 @@ object, embed { .nospace;}
 				}
 			}
 			
-			#foot { padding:20px 5%;}
+			/*#foot { padding:20px 5%;}*/
 		}
 	
 	}
@@ -341,6 +362,17 @@ object, embed { .nospace;}
 	body { background-image:none;
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		
+		#head { height:60px;
+			#logo { top:10px; left:11px; width:224px; height:43px; background:url(../img/logo_int-z1.gif) center no-repeat; }
+			#pay { /*top:13px; left:247px; width:108px; height:30px; background: url(../img/pay_int-z1.gif) no-repeat;*/ display:none;}
+			#lang { top:22px; right:5px;
+				a { padding:5px; font-size:11px;
+					&.selct { padding:4px;}
+				}
+			}
+		}
+		
+		
 		#breadcrums { 
 			.path{ width:100%; margin-right:0; font-size:11px; margin-left:0;}
 			 }
@@ -361,10 +393,21 @@ object, embed { .nospace;}
 		}
 		
 		
+		#foot {  margin:15px 0 0 0; padding:5px; font-size:11px; line-height:120%; width:100%;
+			.foot-bloc { margin-right:20px; width:180px;
+				.princ { font-size:13px; }
+			}
+		}
+		
+		
 		}
 		
 	&.home {
 		#page {
+			
+			#head { 
+				#logo { background:url(../img/logo_home-z1.gif) center no-repeat;}
+			}
 		
 			#wrapper{
 				.menu_cont { 

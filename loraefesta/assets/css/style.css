@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 /*
 Theme Name: lora&festa 2014
 Author: icardi simone
@@ -283,6 +284,21 @@ body embed {
   padding: 0;
   border: 0;
 }
+body .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+
+  padding-top: 25px;
+  height: 0;
+}
+body .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 body #page {
   margin: 0;
   padding: 0;
@@ -295,20 +311,62 @@ body #page {
 }
 body #page #head {
   margin: 0;
-  padding: 0;
   border: 0;
-  padding: 10px 20px;
+  padding: 0;
   background: #000;
+  position: relative;
+  height: 90px;
 }
 body #page #head #logo {
   margin: 0;
   padding: 0;
   border: 0;
   display: inline-block;
-  position: relative;
-  width: 324px;
-  height: 62px;
-  background: url(../img/logo.gif) center no-repeat;
+  position: absolute;
+  top: 15px;
+  left: 32px;
+  width: 320px;
+  height: 60px;
+  background: url(../img/logo_int.gif) center no-repeat;
+}
+body #page #head #pay {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 20px;
+  left: 370px;
+  width: 154px;
+  height: 43px;
+  background: url(../img/pay_int.gif) no-repeat;
+}
+body #page #head #lang {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+}
+body #page #head #lang a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  padding: 6px;
+  color: #FFF;
+  font-size: 12px;
+}
+body #page #head #lang a:hover {
+  text-decoration: overline;
+}
+body #page #head #lang a.selct {
+  padding: 5px;
+  border: solid 1px #FFF;
+}
+body #page #head #lang a.selct:hover {
+  text-decoration: none;
+  cursor: default;
 }
 body #page #breadcrums {
   margin: 0;
@@ -347,6 +405,7 @@ body #page #wrapper h1 {
   margin-right: 250px;
   line-height: 150%;
   margin-left: 250px;
+  font-family: "Bodoni MT", 'EB Garamond', "Times New Roman", serif;
 }
 body #page #wrapper .menu-tot {
   margin: 0;
@@ -425,16 +484,54 @@ body #page #foot {
   margin: 0;
   padding: 0;
   border: 0;
-  margin: 0 10px;
-  padding: 20px 100px;
-  border-top: solid 1px #939598;
+  margin: 30px 0 0 0;
+  padding: 5px 10px;
+  border-top: solid 1px #231F20;
+  font-size: 13px;
+  color: #949494;
+  display: inline-block;
+  width: 940px;
+  font-weight: 500;
+  line-height: 130%;
+}
+body #page #foot .foot-bloc {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+  float: left;
+  width: 220px;
+}
+body #page #foot .foot-bloc .princ {
+  font-family: "Bodoni MT", 'EB Garamond', "Times New Roman", serif;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
 }
 body.interna1 {
   background-image: url(../img/T-bg1.jpg);
   background-repeat: repeat;
 }
+body.home #page {
+  /*#foot { border-top:none;}*/
+
+}
 body.home #page #head {
   background: #FFF;
+}
+body.home #page #head #logo {
+  background: url(../img/logo_home.gif) center no-repeat;
+}
+body.home #page #head #pay {
+  background: url(../img/pay_home.gif) no-repeat;
+}
+body.home #page #head #lang a {
+  color: #000;
+}
+body.home #page #head #lang a.selct {
+  border: solid 1px #000;
 }
 body.home #page #wrapper {
   padding: 0;
@@ -443,7 +540,8 @@ body.home #page #wrapper .video {
   margin: 0;
   padding: 0;
   border: 0;
-  height: 555px;
+  /*height:555px;*/
+  height: auto;
   background: #999;
 }
 body.home #page #wrapper .menu_cont {
@@ -506,9 +604,6 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
   border: 0;
   list-style-image: none;
 }
-body.home #page #foot {
-  border-top: none;
-}
 /* =Media queries
 -------------------------------------------------------------- */
 /* Minimum width of 960 pixels min 601. */
@@ -552,7 +647,11 @@ body.home #page #foot {
     margin-right: 15%;
   }
   body #page #foot {
-    padding: 20px 5%;
+    width: 100%;
+  }
+  body.home #page {
+    /*#foot { padding:20px 5%;}*/
+  
   }
   body.home #page #wrapper .video {
     height: auto;
@@ -573,9 +672,6 @@ body.home #page #foot {
     height: 65%;
     padding-top: 35%;
   }
-  body.home #page #foot {
-    padding: 20px 5%;
-  }
 }
 /* =Media queries
 -------------------------------------------------------------- */
@@ -590,6 +686,31 @@ body.home #page #foot {
     margin-left: 0;
     left: 0;
     overflow-x: hidden;
+  }
+  body #page #head {
+    height: 60px;
+  }
+  body #page #head #logo {
+    top: 10px;
+    left: 11px;
+    width: 224px;
+    height: 43px;
+    background: url(../img/logo_int-z1.gif) center no-repeat;
+  }
+  body #page #head #pay {
+    /*top:13px; left:247px; width:108px; height:30px; background: url(../img/pay_int-z1.gif) no-repeat;*/
+    display: none;
+  }
+  body #page #head #lang {
+    top: 22px;
+    right: 5px;
+  }
+  body #page #head #lang a {
+    padding: 5px;
+    font-size: 11px;
+  }
+  body #page #head #lang a.selct {
+    padding: 4px;
   }
   body #page #breadcrums .path {
     width: 100%;
@@ -616,6 +737,23 @@ body.home #page #foot {
   body #page #wrapper .page_content article .tex {
     width: 100%;
     margin-right: 0;
+  }
+  body #page #foot {
+    margin: 15px 0 0 0;
+    padding: 5px;
+    font-size: 11px;
+    line-height: 120%;
+    width: 100%;
+  }
+  body #page #foot .foot-bloc {
+    margin-right: 20px;
+    width: 180px;
+  }
+  body #page #foot .foot-bloc .princ {
+    font-size: 13px;
+  }
+  body.home #page #head #logo {
+    background: url(../img/logo_home-z1.gif) center no-repeat;
   }
   body.home #page #wrapper .menu_cont .sezione .menu {
     font-size: 15px;
