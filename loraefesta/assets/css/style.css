@@ -577,18 +577,35 @@ body.home #page #wrapper .menu_cont .sezione .bg {
   display: block;
   /*transition-duration:0.2s; -webkit-transition-duration:0.2s;*/
 }
+body.home #page #wrapper .menu_cont .sezione h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 90px;
+  font-weight: normal;
+  font-family: "Bodoni MT", 'EB Garamond', "Times New Roman", serif;
+  color: #FFF;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  width: 100%;
+  float: none;
+  line-height: 100%;
+}
 body.home #page #wrapper .menu_cont .sezione .menu {
   margin: 0;
   padding: 0;
   border: 0;
   width: 100%;
   height: 80%;
-  font-size: 25px;
-  line-height: 150%;
+  font-size: 36px;
+  line-height: 130%;
   position: absolute;
   padding-top: 20%;
   top: 0;
   left: 0;
+  font-family: "Bodoni MT", 'EB Garamond', "Times New Roman", serif;
 }
 body.home #page #wrapper .menu_cont .sezione .menu ul {
   margin: 0;
@@ -666,8 +683,12 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
   body.home #page #wrapper .menu_cont .sezione .bg {
     margin-bottom: -1px;
   }
+  body.home #page #wrapper .menu_cont .sezione h1 {
+    font-size: 70px;
+    margin-top: -35px;
+  }
   body.home #page #wrapper .menu_cont .sezione .menu {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 120%;
     height: 65%;
     padding-top: 35%;
@@ -755,8 +776,12 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
   body.home #page #head #logo {
     background: url(../img/logo_home-z1.gif) center no-repeat;
   }
+  body.home #page #wrapper .menu_cont .sezione h1 {
+    font-size: 40px;
+    margin-top: -20px;
+  }
   body.home #page #wrapper .menu_cont .sezione .menu {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 img {
