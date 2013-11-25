@@ -383,7 +383,7 @@ body #page #breadcrums .path {
   float: left;
   margin: 15px 250px 0 250px;
   line-height: 150%;
-  font-size: 12px;
+  font-size: 13px;
 }
 body #page #wrapper {
   margin: 0;
@@ -397,11 +397,10 @@ body #page #wrapper h1 {
   padding: 0;
   border: 0;
   margin-bottom: 10px;
-  font-size: 36px;
+  font-size: 60px;
   color: #000;
   font-weight: bold;
   width: 440px;
-  float: left;
   margin-right: 250px;
   line-height: 150%;
   margin-left: 250px;
@@ -423,6 +422,7 @@ body #page #wrapper .menu-tot ul {
   border: 0;
   list-style-type: none;
   margin-bottom: 10px;
+  line-height: 140%;
 }
 body #page #wrapper .menu-tot ul li {
   margin: 0;
@@ -432,7 +432,9 @@ body #page #wrapper .menu-tot ul li {
 }
 body #page #wrapper .menu-tot ul li.macro {
   font-weight: bold;
-  margin-bottom: 5px;
+}
+body #page #wrapper .menu-tot ul li a:hover {
+  color: #666;
 }
 body #page #wrapper .page_content {
   margin: 0;
@@ -442,7 +444,7 @@ body #page #wrapper .page_content {
   width: 690px;
   float: left;
   line-height: 150%;
-  font-size: 12px;
+  font-size: 13px;
 }
 body #page #wrapper .page_content article {
   margin: 0;
@@ -450,9 +452,35 @@ body #page #wrapper .page_content article {
   border: 0;
   margin-top: -4px;
 }
+body #page #wrapper .page_content article h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: auto;
+}
+body #page #wrapper .page_content article h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
 body #page #wrapper .page_content article .tex {
   width: 440px;
   margin-right: 250px;
+}
+body #page #wrapper .page_content article .tex p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 10px;
+}
+body #page #wrapper .page_content article .tex p a {
+  text-decoration: underline;
+}
+body #page #wrapper .page_content article .tex p a:hover {
+  color: #666;
 }
 body #page #wrapper .page_content img {
   margin: 0;
@@ -461,6 +489,7 @@ body #page #wrapper .page_content img {
   width: 100%;
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
   /*border:solid 1px #4E4F4E; padding:1px; */
 
   /*WP*/
@@ -621,6 +650,16 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
   border: 0;
   list-style-image: none;
 }
+body.home #page #wrapper .menu_cont .sezione .menu ul li a {
+  transition: color 0.5s, margin-left 0.5s;
+  -webkit-transition: color 0.5s, margin-left 0.5s;
+  /* Safari */
+
+}
+body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
+  color: #666;
+  margin-left: -5px;
+}
 /* =Media queries
 -------------------------------------------------------------- */
 /* Minimum width of 960 pixels min 601. */
@@ -647,7 +686,7 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
   body #page #wrapper h1 {
     width: 75%;
     margin-right: 0;
-    font-size: 24px;
+    font-size: 36px;
     margin-left: 25%;
   }
   body #page #wrapper .menu-tot {
@@ -658,6 +697,10 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
   body #page #wrapper .page_content {
     width: 75%;
     margin-right: 0;
+    font-size: 12px;
+  }
+  body #page #wrapper .page_content article h2 {
+    font-size: 13px;
   }
   body #page #wrapper .page_content article .tex {
     width: 85%;
@@ -742,7 +785,7 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
   body #page #wrapper h1 {
     width: 70%;
     margin-right: 0;
-    font-size: 18px;
+    font-size: 24px;
     margin-left: 30%;
   }
   body #page #wrapper .menu-tot {
@@ -755,9 +798,15 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li {
     margin-right: 0;
     font-size: 11px;
   }
+  body #page #wrapper .page_content article h2 {
+    font-size: 12px;
+  }
   body #page #wrapper .page_content article .tex {
     width: 100%;
     margin-right: 0;
+  }
+  body #page #wrapper .page_content img {
+    margin-bottom: 5px;
   }
   body #page #foot {
     margin: 15px 0 0 0;
