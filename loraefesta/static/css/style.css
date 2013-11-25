@@ -451,6 +451,7 @@ body #page #wrapper .page_content article {
   padding: 0;
   border: 0;
   margin-top: -4px;
+  margin-bottom: 30px;
 }
 body #page #wrapper .page_content article h1 {
   margin: 0;
@@ -465,6 +466,19 @@ body #page #wrapper .page_content article h2 {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: bold;
+}
+body #page #wrapper .page_content article hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin: 10px 0;
+}
+body #page #wrapper .page_content article hgroup h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  font-weight: 100;
 }
 body #page #wrapper .page_content article .tex {
   width: 440px;
@@ -509,6 +523,39 @@ body #page #wrapper .page_content img.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
+body #page #wrapper .page_content .pagen {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin: 40px 0;
+  position: relative;
+  height: 40px;
+}
+body #page #wrapper .page_content .pagen a {
+  font-size: 24px;
+  color: #000;
+  font-family: "Bodoni MT", 'EB Garamond', "Times New Roman", serif;
+  position: absolute;
+  top: 0;
+  font-style: italic;
+}
+body #page #wrapper .page_content .pagen a strong {
+  /*font-size:30px;*/
+  font-style: normal;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: 3px;
+}
+body #page #wrapper .page_content .pagen a:hover {
+  color: #666;
+}
+body #page #wrapper .page_content .pagen a.prev {
+  left: 0;
+}
+body #page #wrapper .page_content .pagen a.next {
+  right: 0;
+}
 body #page #foot {
   margin: 0;
   padding: 0;
@@ -540,6 +587,10 @@ body #page #foot .foot-bloc .princ {
   font-weight: bold;
 }
 body.interna1 {
+  background-image: url(../img/T-bg1.jpg);
+  background-repeat: repeat;
+}
+body.news {
   background-image: url(../img/T-bg1.jpg);
   background-repeat: repeat;
 }
@@ -667,7 +718,8 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   body {
     background-image: none;
   }
-  body.interna1 {
+  body.interna1,
+  body.news {
     background-image: none;
   }
   body #page {
@@ -702,9 +754,22 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   body #page #wrapper .page_content article h2 {
     font-size: 13px;
   }
+  body #page #wrapper .page_content article hgroup h3 {
+    font-size: 13px;
+  }
   body #page #wrapper .page_content article .tex {
     width: 85%;
     margin-right: 15%;
+  }
+  body #page #wrapper .page_content .pagen {
+    margin: 30px 0;
+    height: 30px;
+  }
+  body #page #wrapper .page_content .pagen a {
+    font-size: 22px;
+  }
+  body #page #wrapper .page_content .pagen a strong {
+    top: 3px;
   }
   body #page #foot {
     width: 100%;
@@ -798,7 +863,16 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
     margin-right: 0;
     font-size: 11px;
   }
+  body #page #wrapper .page_content article {
+    margin-bottom: 15px;
+  }
   body #page #wrapper .page_content article h2 {
+    font-size: 12px;
+  }
+  body #page #wrapper .page_content article hgroup {
+    margin: 5px 0;
+  }
+  body #page #wrapper .page_content article hgroup h3 {
     font-size: 12px;
   }
   body #page #wrapper .page_content article .tex {
@@ -807,6 +881,16 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   }
   body #page #wrapper .page_content img {
     margin-bottom: 5px;
+  }
+  body #page #wrapper .page_content .pagen {
+    margin: 20px 0;
+    height: 20px;
+  }
+  body #page #wrapper .page_content .pagen a {
+    font-size: 18px;
+  }
+  body #page #wrapper .page_content .pagen a strong {
+    top: 3px;
   }
   body #page #foot {
     margin: 15px 0 0 0;

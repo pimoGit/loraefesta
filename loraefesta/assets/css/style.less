@@ -214,9 +214,12 @@ object, embed { .nospace;}
 			
 			
 			.page_content {.nospace; display:inline-block; width:690px; float:left;  line-height:150%; font-size:13px; 
-				article {.nospace; margin-top:-4px;
+				article {.nospace; margin-top:-4px; margin-bottom:30px;
 					h1 {.nospace;  width:auto;  }
 					h2 {.nospace; margin-bottom:10px; font-size:14px; font-weight:bold;}
+					hgroup {.nospace; margin:10px 0;
+						h3 {.nospace; font-size:14px; font-weight:100;}
+					}
 					.tex { width:440px; margin-right:250px;
 						p {.nospace; margin-bottom:10px;
 							a { text-decoration:underline;
@@ -240,6 +243,15 @@ object, embed { .nospace;}
 				}
 				
 				 }
+				 .pagen { .nospace; margin:40px 0; position:relative; height:40px;
+				 	a {font-size:24px; color:#000; font-family:"Bodoni MT", 'EB Garamond', "Times New Roman", serif; position:absolute; top:0; font-style:italic;
+						strong { /*font-size:30px;*/ font-style:normal; font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-weight:600; position:relative; top:3px;}
+						&:hover { color:#666;}
+						&.prev { left:0;}
+						&.next { right:0;}
+					}
+				
+				}
 			}
 		
 		}
@@ -256,6 +268,8 @@ object, embed { .nospace;}
 	
 	
 	&.interna1 {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;}
+	
+	&.news {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;}
 	
 	&.home {
 		#page {
@@ -310,7 +324,7 @@ object, embed { .nospace;}
 @media screen and (max-width: 960px) {
 	
 	body { background-image:none;
-	&.interna1 { background-image:none;}
+	&.interna1, &.news { background-image:none;}
 	
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		
@@ -330,7 +344,17 @@ object, embed { .nospace;}
 			.page_content { width:75%;  margin-right:0; font-size:12px;
 				article {
 					h2 { font-size:13px;}
+					hgroup {
+						h3 {font-size:13px;}
+					}
 					.tex { width:85%; margin-right:15%;}
+				}
+				
+				 .pagen { margin:30px 0; height:30px;
+				 	a {font-size:22px; 
+						strong { top:3px;}
+					}
+				
 				}
 				
 			}
@@ -403,11 +427,22 @@ object, embed { .nospace;}
 			
 			
 			.page_content { width:70%;  margin-right:0; font-size:11px; 
-				article {
+				article { margin-bottom:15px;
 					h2 {font-size:12px; }
+					hgroup { margin:5px 0;
+						h3 {font-size:12px; }
+					}
 					.tex { width:100%; margin-right:0;}
 				}
 				img {  margin-bottom:5px; }
+				
+				 .pagen {  margin:20px 0; height:20px;
+				 	a {font-size:18px; 
+						strong { top:3px;}
+					}
+				
+				}
+				
 			}
 		
 		}
