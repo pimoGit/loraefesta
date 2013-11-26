@@ -183,8 +183,11 @@ object, embed { .nospace;}
 	#page{ .nospace; width:960px; background:#FFF; margin-left:-480px; left:50%; position:relative;
 	
 		#head {.nospace; padding:0; background:#000; position:relative; height:90px;
-			#logo { .nospace; display:inline-block; position:absolute; top:15px; left:32px; width:320px; height:60px; background:url(../img/logo_int.gif) center no-repeat; }
-			#pay {.nospace; position:absolute; top:20px; left:370px; width:154px; height:43px; background: url(../img/pay_int.gif) no-repeat;}
+			#logo { .nospace; display:inline-block; position:absolute; top:15px; left:23px; width:328px; height:61px; background:url(../img/logo_int.gif) center no-repeat; }
+			#pay {.nospace; position:absolute; top:28px; left:370px; width:177px; height:37px; background-repeat: no-repeat;
+				&.it { background-image: url(../img/pay_int.gif);}
+				&.en { background-image: url(../img/pay_int-en.gif);}
+			}
 			#lang {.nospace; position:absolute; top:45px; right:10px;
 				a {.nospace; display:inline-block; padding:6px; color:#FFF; font-size:12px;
 					&:hover { text-decoration:overline;}
@@ -214,17 +217,20 @@ object, embed { .nospace;}
 			
 			
 			.page_content {.nospace; display:inline-block; width:690px; float:left;  line-height:150%; font-size:13px; 
-				article {.nospace; margin-top:-4px; margin-bottom:30px;
+				article {.nospace; margin-top:-4px; margin-bottom:60px;
 					h1 {.nospace;  width:auto;  }
 					h2 {.nospace; margin-bottom:10px; font-size:14px; font-weight:bold;}
 					hgroup {.nospace; margin:10px 0;
 						h3 {.nospace; font-size:14px; font-weight:100;}
 					}
-					.tex { width:440px; margin-right:250px;
+					.tex { width:440px; margin-right:250px; position:relative;
 						p {.nospace; margin-bottom:10px;
-							a { text-decoration:underline;
-								&:hover {color:#666;}
+							a { /*text-decoration:underline;*/ font-weight:bold;
+								&:hover {color:#666; text-decoration:underline;}
 							}
+						}
+						ul {.nospace;
+							li {.nospace; margin-bottom:1px; list-style-type: none; padding-left:12px; background:url(../img/li.gif) left top no-repeat;}
 						}
 					}
 				}
@@ -271,11 +277,24 @@ object, embed { .nospace;}
 	
 	&.news {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;}
 	
+	&.collezioni {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;
+		#page #wrapper .page_content article .tex {
+			.sublink { .nospace; position:absolute; top:0; right:-225px; line-height:200%; width:200px;
+				a {font-size:14px; font-weight:bold; color:#000;
+					&:hover { color:#666;}
+				}
+			}	
+		}
+	}
+	
 	&.home {
 		#page {
 			#head { background:#FFF;
 				#logo { background:url(../img/logo_home.gif) center no-repeat;}
-				#pay { background: url(../img/pay_home.gif) no-repeat;}
+				#pay {
+					&.it { background-image: url(../img/pay_home.gif);}
+					&.en { background-image: url(../img/pay_home-en.gif);}
+				}
 				#lang {
 					a { color:#000; 
 						&.selct { border:solid 1px #000;}
@@ -324,7 +343,7 @@ object, embed { .nospace;}
 @media screen and (max-width: 960px) {
 	
 	body { background-image:none;
-	&.interna1, &.news { background-image:none;}
+	&.interna1, &.news, &.collezioni { background-image:none;}
 	
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		
@@ -366,6 +385,15 @@ object, embed { .nospace;}
 		}
 		
 		
+	&.collezioni {
+		#page #wrapper .page_content article .tex { width:80%; margin-right:20%;
+			.sublink { right:-175px; line-height:150%; width:150px;
+				a {font-size:13px; }
+			}	
+		}
+	}
+		
+		
 	&.home {
 		#page {
 			
@@ -405,7 +433,7 @@ object, embed { .nospace;}
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		
 		#head { height:60px;
-			#logo { top:10px; left:11px; width:224px; height:43px; background:url(../img/logo_int-z1.gif) center no-repeat; }
+			#logo { top:10px; left:10px; width:231px; height:43px; background:url(../img/logo_int-z1.gif) center no-repeat; }
 			#pay { /*top:13px; left:247px; width:108px; height:30px; background: url(../img/pay_int-z1.gif) no-repeat;*/ display:none;}
 			#lang { top:22px; right:5px;
 				a { padding:5px; font-size:11px;
@@ -427,7 +455,7 @@ object, embed { .nospace;}
 			
 			
 			.page_content { width:70%;  margin-right:0; font-size:11px; 
-				article { margin-bottom:15px;
+				article { margin-bottom:30px;
 					h2 {font-size:12px; }
 					hgroup { margin:5px 0;
 						h3 {font-size:12px; }
@@ -456,6 +484,15 @@ object, embed { .nospace;}
 		
 		
 		}
+		
+	&.collezioni {
+		#page #wrapper .page_content article .tex { 
+			.sublink { position:relative; left:0;
+				a {font-size:12px; }
+			}	
+		}
+	}
+		
 		
 	&.home {
 		#page {

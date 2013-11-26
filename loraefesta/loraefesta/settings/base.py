@@ -170,6 +170,7 @@ CMS_TEMPLATES = (
     ('modelli/interna.html', gettext('interna')),
     ('modelli/interna2.html', gettext('interna2')),
     ('modelli/news.html', gettext('news')),
+    ('modelli/collezioni.html', gettext('collezioni')),
 )
 
 ########## END TEMPLATE CONFIGURATION

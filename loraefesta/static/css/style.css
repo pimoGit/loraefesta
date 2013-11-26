@@ -324,9 +324,9 @@ body #page #head #logo {
   display: inline-block;
   position: absolute;
   top: 15px;
-  left: 32px;
-  width: 320px;
-  height: 60px;
+  left: 23px;
+  width: 328px;
+  height: 61px;
   background: url(../img/logo_int.gif) center no-repeat;
 }
 body #page #head #pay {
@@ -334,11 +334,17 @@ body #page #head #pay {
   padding: 0;
   border: 0;
   position: absolute;
-  top: 20px;
+  top: 28px;
   left: 370px;
-  width: 154px;
-  height: 43px;
-  background: url(../img/pay_int.gif) no-repeat;
+  width: 177px;
+  height: 37px;
+  background-repeat: no-repeat;
+}
+body #page #head #pay.it {
+  background-image: url(../img/pay_int.gif);
+}
+body #page #head #pay.en {
+  background-image: url(../img/pay_int-en.gif);
 }
 body #page #head #lang {
   margin: 0;
@@ -451,7 +457,7 @@ body #page #wrapper .page_content article {
   padding: 0;
   border: 0;
   margin-top: -4px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 body #page #wrapper .page_content article h1 {
   margin: 0;
@@ -483,6 +489,7 @@ body #page #wrapper .page_content article hgroup h3 {
 body #page #wrapper .page_content article .tex {
   width: 440px;
   margin-right: 250px;
+  position: relative;
 }
 body #page #wrapper .page_content article .tex p {
   margin: 0;
@@ -491,10 +498,26 @@ body #page #wrapper .page_content article .tex p {
   margin-bottom: 10px;
 }
 body #page #wrapper .page_content article .tex p a {
-  text-decoration: underline;
+  /*text-decoration:underline;*/
+  font-weight: bold;
 }
 body #page #wrapper .page_content article .tex p a:hover {
   color: #666;
+  text-decoration: underline;
+}
+body #page #wrapper .page_content article .tex ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body #page #wrapper .page_content article .tex ul li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 1px;
+  list-style-type: none;
+  padding-left: 12px;
+  background: url(../img/li.gif) left top no-repeat;
 }
 body #page #wrapper .page_content img {
   margin: 0;
@@ -594,6 +617,28 @@ body.news {
   background-image: url(../img/T-bg1.jpg);
   background-repeat: repeat;
 }
+body.collezioni {
+  background-image: url(../img/T-bg1.jpg);
+  background-repeat: repeat;
+}
+body.collezioni #page #wrapper .page_content article .tex .sublink {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  top: 0;
+  right: -225px;
+  line-height: 200%;
+  width: 200px;
+}
+body.collezioni #page #wrapper .page_content article .tex .sublink a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+body.collezioni #page #wrapper .page_content article .tex .sublink a:hover {
+  color: #666;
+}
 body.home #page {
   /*#foot { border-top:none;}*/
 
@@ -604,8 +649,11 @@ body.home #page #head {
 body.home #page #head #logo {
   background: url(../img/logo_home.gif) center no-repeat;
 }
-body.home #page #head #pay {
-  background: url(../img/pay_home.gif) no-repeat;
+body.home #page #head #pay.it {
+  background-image: url(../img/pay_home.gif);
+}
+body.home #page #head #pay.en {
+  background-image: url(../img/pay_home-en.gif);
 }
 body.home #page #head #lang a {
   color: #000;
@@ -719,7 +767,8 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
     background-image: none;
   }
   body.interna1,
-  body.news {
+  body.news,
+  body.collezioni {
     background-image: none;
   }
   body #page {
@@ -774,6 +823,18 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   body #page #foot {
     width: 100%;
   }
+  body.collezioni #page #wrapper .page_content article .tex {
+    width: 80%;
+    margin-right: 20%;
+  }
+  body.collezioni #page #wrapper .page_content article .tex .sublink {
+    right: -175px;
+    line-height: 150%;
+    width: 150px;
+  }
+  body.collezioni #page #wrapper .page_content article .tex .sublink a {
+    font-size: 13px;
+  }
   body.home #page {
     /*#foot { padding:20px 5%;}*/
   
@@ -821,8 +882,8 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   }
   body #page #head #logo {
     top: 10px;
-    left: 11px;
-    width: 224px;
+    left: 10px;
+    width: 231px;
     height: 43px;
     background: url(../img/logo_int-z1.gif) center no-repeat;
   }
@@ -864,7 +925,7 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
     font-size: 11px;
   }
   body #page #wrapper .page_content article {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
   body #page #wrapper .page_content article h2 {
     font-size: 12px;
@@ -905,6 +966,13 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   }
   body #page #foot .foot-bloc .princ {
     font-size: 13px;
+  }
+  body.collezioni #page #wrapper .page_content article .tex .sublink {
+    position: relative;
+    left: 0;
+  }
+  body.collezioni #page #wrapper .page_content article .tex .sublink a {
+    font-size: 12px;
   }
   body.home #page #head #logo {
     background: url(../img/logo_home-z1.gif) center no-repeat;
