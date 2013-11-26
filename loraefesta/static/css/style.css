@@ -519,6 +519,10 @@ body #page #wrapper .page_content article .tex ul li {
   padding-left: 12px;
   background: url(../img/li.gif) left top no-repeat;
 }
+body #page #wrapper .page_content article .tex .pittogram {
+  width: 100%;
+  max-width: 236px !important;
+}
 body #page #wrapper .page_content article .stock {
   margin: 0;
   padding: 0;
@@ -550,20 +554,18 @@ body #page #wrapper .page_content img {
 
   /*WP*/
 
-  /* Images */
+  /* Images 
+				&.alignleft {
+					float: left; margin:3px 8px 3px 0;
+				}
+				&.alignright {
+					float: right;margin:3px 0 3px 8px;
+				}
+				&.aligncenter {
+					margin-left: auto;
+					margin-right: auto;
+				}*/
 
-}
-body #page #wrapper .page_content img.alignleft {
-  float: left;
-  margin: 3px 8px 3px 0;
-}
-body #page #wrapper .page_content img.alignright {
-  float: right;
-  margin: 3px 0 3px 8px;
-}
-body #page #wrapper .page_content img.aligncenter {
-  margin-left: auto;
-  margin-right: auto;
 }
 body #page #wrapper .page_content .pagen {
   margin: 0;
