@@ -519,6 +519,25 @@ body #page #wrapper .page_content article .tex ul li {
   padding-left: 12px;
   background: url(../img/li.gif) left top no-repeat;
 }
+body #page #wrapper .page_content article .stock {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  width: 690px;
+}
+body #page #wrapper .page_content article .stock .col {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+  margin-left: 12px;
+  float: left;
+  width: 339px;
+}
+body #page #wrapper .page_content article .stock .col:first-child {
+  margin-left: 0;
+}
 body #page #wrapper .page_content img {
   margin: 0;
   padding: 0;
@@ -572,6 +591,10 @@ body #page #wrapper .page_content .pagen a strong {
 }
 body #page #wrapper .page_content .pagen a:hover {
   color: #666;
+}
+body #page #wrapper .page_content .pagen a.off {
+  color: #CCC;
+  cursor: default;
 }
 body #page #wrapper .page_content .pagen a.prev {
   left: 0;
@@ -638,6 +661,9 @@ body.collezioni #page #wrapper .page_content article .tex .sublink a {
 }
 body.collezioni #page #wrapper .page_content article .tex .sublink a:hover {
   color: #666;
+}
+body.collezioni_det {
+  background-image: none;
 }
 body.home #page {
   /*#foot { border-top:none;}*/
@@ -810,6 +836,13 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
     width: 85%;
     margin-right: 15%;
   }
+  body #page #wrapper .page_content article .stock {
+    width: 100%;
+  }
+  body #page #wrapper .page_content article .stock .col {
+    margin-left: 6%;
+    width: 47%;
+  }
   body #page #wrapper .page_content .pagen {
     margin: 30px 0;
     height: 30px;
@@ -939,6 +972,14 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   body #page #wrapper .page_content article .tex {
     width: 100%;
     margin-right: 0;
+  }
+  body #page #wrapper .page_content article .stock {
+    width: 100%;
+  }
+  body #page #wrapper .page_content article .stock .col {
+    margin-left: 0;
+    width: 100%;
+    float: none;
   }
   body #page #wrapper .page_content img {
     margin-bottom: 5px;
