@@ -235,6 +235,13 @@ html {
 .hidden {
   visibility: hidden!important;
 }
+#map1,
+#map2,
+#map3,
+#map4 {
+  height: 100%;
+  width: 100%;
+}
 form {
   margin: 0;
   padding: 0;
