@@ -11,35 +11,9 @@
     
     <h1>Titolo principale</h1>
     
-    <div class="menu-tot">
-    	<nav>
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-            
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-    	</nav>
-    </div>
+        {% block menu %} 
+            {% include "modelli/menu.html" %}       
+        {% endblock menu %}  
     
     <div class="page_content">
     
@@ -70,7 +44,13 @@
         <p>Sea te choro perfecto, per eu meis nonumy percipit. Ut mea sint constituam, cu pro impedit constituam. Et diam wisi tollit mel, te has atqui veritus. Falli volumus ullamcorper id vis, fugit debet ei pri. Mea esse saperet oporteat cu, sumo interesset an cum. Facer expetenda ius te, sint mundi aperiri no est, mollis salutandi quo ne. No dicta errem sed. Mea ei detraxit patrioque, sumo eirmod ea vix. Et dicit omittantur eam, et vix modo eius vidit.</p>
         <p>Vis et pertinacia abhorreant constituam, eum at quod vero. Ferri consectetuer sed no, ex vix nonumy posidonium quaerendum. Eum in nostro omnesque philosophia, sit veniam recteque et. Et sit facer honestatis, sonet propriae officiis ne vel, est atqui verear eruditi eu. Ut duo augue deserunt mnesarchum, an per option dignissim, cu cum convenire consulatu deterruisset. Cu vel debet ludus, docendi nominati philosophia ex his.</p> 
         </div>
-        <img src="{% static 'img/T-imgtex.jpg' %}" width="587" height="280" alt="img">
+        
+		<div class="video">
+        	<div class="videoWrapper">
+                <iframe width="538" height="327" src="//www.youtube.com/embed/n_dZNLr2cME" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div> 
+        
         </article>
         
         <div class="pagen">

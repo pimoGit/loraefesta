@@ -257,6 +257,9 @@ body {
   background: #FFF;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 body td {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -650,17 +653,29 @@ body #page #foot .foot-bloc .princ {
   font-size: 15px;
   font-weight: bold;
 }
-body.interna1 {
-  background-image: url(../img/T-bg1.jpg);
-  background-repeat: repeat;
+body.storia {
+  background-image: url(../img/bg_page-storia.jpg);
+}
+body.mission {
+  background-image: url(../img/bg_page-mission.jpg);
+}
+body.filaecarda {
+  background-image: url(../img/bg_page-filaturacardata.jpg);
+}
+body.certiependa {
+  background-image: url(../img/bg_page-certificazioni.jpg);
+}
+body.red {
+  background-image: url(../img/bg_page-r&d.jpg);
+}
+body.filiera {
+  background-image: url(../img/bg_page-filiera.jpg);
 }
 body.news {
-  background-image: url(../img/T-bg1.jpg);
-  background-repeat: repeat;
+  background-image: url(../img/bg_page-news.jpg);
 }
 body.collezioni {
-  background-image: url(../img/T-bg1.jpg);
-  background-repeat: repeat;
+  background-image: url(../img/bg_page-collection.jpg);
 }
 body.collezioni #page #wrapper .page_content article .tex .sublink {
   margin: 0;
@@ -684,8 +699,7 @@ body.collezioni_det {
   background-image: none;
 }
 body.sedi {
-  background-image: url(../img/T-bg1.jpg);
-  background-repeat: repeat;
+  background-image: url(../img/bg_page-sedi.jpg);
 }
 body.sedi #page #wrapper .page_content article .tex {
   display: inline-block;
@@ -842,7 +856,12 @@ body.home #page #wrapper .menu_cont .sezione .menu ul li a:hover {
   body {
     background-image: none;
   }
-  body.interna1,
+  body.storia,
+  body.mission,
+  body.filaecarda,
+  body.certiependa,
+  body.red,
+  body.filiera,
   body.news,
   body.collezioni,
   body.sedi {

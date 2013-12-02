@@ -159,7 +159,7 @@ html { width:100%; height:100%;}
 
 
 form { .nospace; }
-body { .nospace; font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-size:10px; color:#000; background:#FFF; width:100%; height: 100%;
+body { .nospace; font-family: Futura, "Trebuchet MS", Arial, sans-serif;  font-size:10px; color:#000; background:#FFF; width:100%; height: 100%; background-repeat:no-repeat; background-position:center; background-attachment:fixed;
 td {  font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size:10px; color:#000; }
 a, a:link {  text-decoration:none; cursor:pointer; outline:none; color:#000; }
 a:hover, a:active { text-decoration:none; cursor:pointer; outline:none; color:#333;}
@@ -290,11 +290,21 @@ object, embed { .nospace;}
 	
 	
 	
-	&.interna1 {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;}
+	&.storia {background-image:url(../img/bg_page-storia.jpg);}
 	
-	&.news {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;}
+	&.mission {background-image:url(../img/bg_page-mission.jpg);}
+	
+	&.filaecarda {background-image:url(../img/bg_page-filaturacardata.jpg);}
+	
+	&.certiependa {background-image:url(../img/bg_page-certificazioni.jpg);}
+	
+	&.red {background-image:url(../img/bg_page-r&d.jpg);}
+	
+	&.filiera {background-image: url(../img/bg_page-filiera.jpg);}
 		
-	&.collezioni {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;
+	&.news {background-image:url(../img/bg_page-news.jpg);}
+		
+	&.collezioni {background-image:url(../img/bg_page-collection.jpg);
 		#page #wrapper .page_content article .tex {
 			.sublink { .nospace; position:absolute; top:0; right:-225px; line-height:200%; width:200px;
 				a {font-size:14px; font-weight:bold; color:#000;
@@ -307,7 +317,7 @@ object, embed { .nospace;}
 	
 	&.collezioni_det { background-image:none; }
 	
-	&.sedi {background-image:url(../img/T-bg1.jpg); background-repeat:repeat;
+	&.sedi {background-image:url(../img/bg_page-sedi.jpg); 
 		#page #wrapper .page_content article .tex { display:inline-block;
 			h2 {.nospace;}
 			.bloc1 { .nospace; display:inline-block; width:50%; float:left; margin-right:5%; font-size:12px;}
@@ -372,7 +382,7 @@ object, embed { .nospace;}
 @media screen and (max-width: 960px) {
 	
 	body { background-image:none;
-	&.interna1, &.news, &.collezioni, &.sedi { background-image:none;}
+		&.storia, &.mission, &.filaecarda, &.certiependa, &.red, &.filiera, &.news, &.collezioni, &.sedi { background-image:none;}
 	
 		#page{ width:100%; min-width:320px; margin-left:0; left:0; overflow-x:hidden;
 		

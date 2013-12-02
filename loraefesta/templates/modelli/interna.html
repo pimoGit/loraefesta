@@ -2,7 +2,7 @@
 
 {% load staticfiles %}
 
- {% block bodyclass %} class="interna1" {% endblock bodyclass %}
+ {% block bodyclass %} class="storia" {% endblock bodyclass %}
 
 
 
@@ -11,35 +11,9 @@
     
     <h1>Titolo principale</h1>
     
-    <div class="menu-tot">
-    	<nav>
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-            
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-        	<ul>
-        		<li class="macro"><a href="#">Macro voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        		<li><a href="#">sotto voce</a></li>
-        	</ul>
-    	</nav>
-    </div>
+        {% block menu %} 
+            {% include "modelli/menu.html" %}       
+        {% endblock menu %}  
     
     <div class="page_content">
         <article>

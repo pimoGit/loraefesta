@@ -173,6 +173,7 @@ CMS_TEMPLATES = (
     ('modelli/collezioni.html', gettext('collezioni')),
     ('modelli/collezioni_det.html', gettext('collezioni_det')),
     ('modelli/sedi.html', gettext('sedi')),
+    ('modelli/404.html', gettext('404')),
 )
 
 ########## END TEMPLATE CONFIGURATION
