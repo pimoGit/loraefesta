@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	
-	$('#open-popup').magnificPopup({
+	$('.open_gallery').magnificPopup({
 		items: [
 		  {
 			src: 'http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Peter_%26_Paul_fortress_in_SPB_03.jpg/800px-Peter_%26_Paul_fortress_in_SPB_03.jpg',
