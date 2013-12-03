@@ -2,7 +2,14 @@
 
 {% load staticfiles %}
 
- {% block bodyclass %} class="news" {% endblock bodyclass %}
+
+{% block mediajq %}
+<link media="all" type="text/css" href="{% static 'css/magnific-popup.css' %}"  rel="stylesheet"><!--GALLERY-->
+<script src="{% static 'js/jquery-1.10.2.min.js' %}" type="text/javascript"></script><!--GALLERY-->
+{% endblock mediajq %}        
+
+
+{% block bodyclass %} class="news" {% endblock bodyclass %}
 
 
 
@@ -31,6 +38,10 @@
         </div>
         <img src="{% static 'img/T-imgtex.jpg' %}" width="587" height="280" alt="img">
         </article>
+        
+        <aside>
+        	<a href="#" class="open_gallery"></a>
+        </aside>
         
         <article>
         <header>
@@ -61,3 +72,8 @@
     </div>
     <!--endsVIEW-->
 {% endblock content %}
+
+
+{% block media %}
+<script src="{% static 'js/magnific-popup.js' %}" type="text/javascript"></script><!--GALLERY-->
+{% endblock media %}
